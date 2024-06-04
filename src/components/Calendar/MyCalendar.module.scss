@@ -1,0 +1,30 @@
+.date {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    width: 80px;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px rgb(76, 41, 97) solid;
+    &_blocked {
+        cursor: not-allowed;
+        outline: none;
+    }
+}
+
+.wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.calendar {
+    position: absolute;
+    z-index: 1000;
+}

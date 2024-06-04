@@ -1,0 +1,52 @@
+.list_item {
+    font-size: 25px;
+    font-weight: normal;
+    // border: 1px solid black;
+    // background-color: rgb(118, 91, 138);
+    background-color:#1e1d1f;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    min-height: 100px;
+    position: relative;
+    text-align: left;
+    padding-bottom: 30px;
+    border: 1px #fff solid;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .2s;
+    opacity: .6;
+    &_delete {
+        color: #d12828;
+    }
+    &_edit {
+        color: yellow;
+    }
+    &_complete {
+        color: #54a337;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.description {
+    text-align-last: left;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.date {
+    font-size: 20px;
+    text-align: right;
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+}

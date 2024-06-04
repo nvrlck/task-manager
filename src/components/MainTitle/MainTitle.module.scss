@@ -1,0 +1,26 @@
+.title {
+    text-transform: uppercase;
+    position: absolute;
+    color: #fff;
+    top: 30px;
+    left: 350px;
+    transition: all .4s;
+    &_left {
+        left: 150px
+    }
+    & span {
+        margin-left: 0;
+        font-size: 18px;
+        color: rgb(144, 118, 163);
+    }
+}
+
+@media screen and (max-device-width: 768px){
+    .title {
+        left: 50px;
+        display: none;
+        &_left {
+            display: block;
+        }
+    }
+}
