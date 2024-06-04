@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Completed from "./components/pages/Completed";
 import TodoList from "./components/pages/TodoList";
 import Today from "./components/pages/Today";
@@ -25,7 +25,7 @@ const App = () => {
       visible,
       setVisible
     }}>
-      <BrowserRouter>
+      <HashRouter>
        <SideBar />
         <Routes>
           <Route path='/' element={<TodoList/>} />
@@ -34,7 +34,7 @@ const App = () => {
           <Route path='/completed' element={<Completed/>} />
           <Route path="*" element={<Navigate to ='/'/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </VisibleContext.Provider>
     </IdContext.Provider>
     </ActiveContext.Provider>
