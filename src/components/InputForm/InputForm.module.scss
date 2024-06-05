@@ -18,6 +18,8 @@
     border: none;
     outline: none;
     border-bottom: 1px rgb(76, 41, 97) solid;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
 .description {
@@ -36,11 +38,12 @@
 }
 
 .category {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
     border: none;
     outline: none;
     border-bottom: 1px rgb(76, 41, 97) solid;
     padding: 5px;
-    font-size: 15px;
 }
 
 .add_task {
